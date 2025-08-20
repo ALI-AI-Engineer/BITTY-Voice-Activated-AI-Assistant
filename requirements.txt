@@ -1,0 +1,12 @@
+SpeechRecognition # for speech recognition
+# webbrowser # for Web Browsing
+pyttsx3 # for response from assistant in voice
+music # for music
+plysound # for playing audio files
+requests
+gTTS # Google Text to Speech OSS Library
+pygame # for building applications
+openai # to use open AI API key 
+langchain
+langgraph
+pyaudio # to use Google API for STT, if gives error intall pipwin first
