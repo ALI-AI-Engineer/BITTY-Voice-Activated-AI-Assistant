@@ -1,0 +1,103 @@
+#####BITTY – Voice-Activated Autonomous AI Assistant
+
+BITTY is a voice-activated autonomous AI assistant built in Python that demonstrates the evolution of an intelligent agent through eight progressive phases. It integrates LangGraph, MCP protocols, and multiple AI-driven tools to provide real-time productivity, web, and system-level functionalities—all orchestrated asynchronously.
+
+## Features
+
+Voice-activated interaction for hands-free operation
+
+Multi-server architecture with MCP protocols:
+
+Productivity MCP Server – Send/read emails, fetch calendar events, generate summarized mails
+
+Web MCP Server – Perform intelligent web searches and retrieve information
+
+System MCP Server – Control system-level operations directly from voice commands
+
+Agentic AI concepts implemented with LangGraph framework
+
+Async programming for seamless multitasking and responsiveness
+
+Step-by-step project evolution from Phase 1 → Phase 8 to show learning and scaling
+
+## Installation & Setup
+Prerequisites
+
+Python (>=3.9 recommended)
+
+VS Code (or any preferred IDE)
+
+pip package manager
+
+Install Dependencies
+git clone https://github.com/ALI-AI-Engineer/BITTY-Voice-Activated-AI-Assistant.git
+cd BITTY-Voice-Activated-AI-Assistant
+pip install -r requirements.txt
+
+## Configuration
+
+Set Environment Variables
+
+OPENAI_API_KEY → Your OpenAI API key
+
+GOOGLE_API_KEY → Google Developer API key (required for Productivity MCP Server)
+
+You can store these in a .env file for convenience:
+
+OPENAI_API_KEY=your_openai_key
+GOOGLE_API_KEY=your_google_key
+
+
+Start MCP Servers
+
+python start_servers.py
+
+
+Test Connectivity
+Run the provided test file to verify MCP server communication:
+
+python test_mcp_connectivity.py
+
+## Usage
+
+The project is structured in phases (1 → 8) to demonstrate its incremental development.
+
+Users can explore each phase, but for the final version:
+
+python phase8_main.py
+
+
+Speak your command (e.g., “Send a meeting summary email”, “Search news on AI”, “Check my calendar”, “Open YouTube”).
+
+BITTY will process requests asynchronously using the relevant MCP server.
+
+## Project Structure
+├── Phase1.ipynb … Phase8.ipynb     # Step-by-step development notebooks
+├── phase6_main.py / phase7_main.py / phase8_main.py
+├── start_servers.py                 # Launches MCP servers
+├── mcp_productivity.py              # Productivity MCP server
+├── mcp_web.py                       # Web MCP server
+├── mcp_system.py                    # System MCP server
+├── test_mcp_connectivity.py         # Test server connections
+├── requirements.txt
+└── README.md
+
+## Development & Testing
+
+Explore different phases to understand the evolution of features
+
+Run pytest or specific test files to validate MCP server functionality
+
+## License
+
+This project is licensed under the MIT License – free to use, modify, and distribute with attribution.
+
+## Contribution
+
+Contributions, suggestions, and improvements are welcome.
+
+Fork the repo
+
+Create a feature branch
+
+Submit a pull request
