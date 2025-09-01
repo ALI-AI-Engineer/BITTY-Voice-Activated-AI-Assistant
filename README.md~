@@ -1,5 +1,5 @@
 BITTY – Voice-Activated Autonomous AI Assistant
-===============================================
+
 
 BITTY is a voice-activated autonomous AI assistant built in Python that demonstrates the evolution of an intelligent agent through eight progressive phases. It integrates LangGraph, MCP protocols, and multiple AI-driven tools to provide real-time productivity, web, and system-level functionalities—all orchestrated asynchronously.
 
@@ -102,4 +102,5 @@ Fork the repo
 Create a feature branch
 
 Submit a pull request
+
 
